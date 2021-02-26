@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block main %}
+
+
+<ul>
+    {% for x in imageList: %}
+    <li>
+
+        <img src="{{ url_for('get_image', filename=x) }}" />
+    
+    
+  
+    </li>
+    {% endfor %}
+</ul>
+
+
+
+{% endblock%}
