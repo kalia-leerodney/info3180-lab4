@@ -71,7 +71,7 @@ def get_image(filename):
     #print(filename)
     #print(app.config['UPLOAD_FOLDER'])
     rootdir = os.getcwd()
-    print(rootdir + app.config['UPLOAD_FOLDER'])
+    #print(rootdir + app.config['UPLOAD_FOLDER'])
     return send_from_directory(rootdir + "/" + app.config['UPLOAD_FOLDER'],
 filename)
 
