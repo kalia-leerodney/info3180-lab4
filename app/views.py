@@ -45,7 +45,7 @@ def upload():
         if form.validate_on_submit():
             picture = form.picture.data
             filename = secure_filename(picture.filename)
-            print(filename)
+            #print(filename)
             picture.save(os.path.join(
             app.config['UPLOAD_FOLDER'], filename
             ))
