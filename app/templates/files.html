@@ -3,15 +3,15 @@
 {% block main %}
 
 
-        <div class="pictures">
+        <ul>
             {% for x in imageList: %}
-            <div class="row">
+            <li>
                 
                 <img src="{{ url_for('get_image', filename=x) }}" />
             
-            </div>
+            </li>
             {% endfor %}
-        </div>
+        </ul>
 
 
    
